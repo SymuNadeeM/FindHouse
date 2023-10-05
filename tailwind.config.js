@@ -8,11 +8,46 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'inner-about': "url('/src/app/assets/inner-pagebg.jpg')",
+        
       },
+      fontFamily:{
+        'nunito':['Nunito Sans', "sans-serif"]
+      },
+      // animation: {
+      //   'spin-slow': 'spin 3s linear infinite',
+      //   "safelist": ['animate-[fade-in_1s_ease-in-out]', 'animate-[fade-in-down_1s_ease-in-out]']
+      // },
+      colors: {
+        'primary-color': "#ff5a5f",
+        'regal-blue': '#243c5a',
+        "text-primary": "#484848",
+        "blue":" #0d6efd",
+       "indigo":" #6610f2",
+       "purple":" #6f42c1",
+       "pink":" #d63384",
+       "red":" #dc3545",
+     "orange":" #fd7e14",
+    "yellow":" #ffc107",
+    "green":" #198754",
+    "teal":" #20c997",
+    "cyan":" #0dcaf0",
+    "black":" #000",
+    "white":" #fff",
+    "gray":" #6c757d",
+    "gray-dark":" #343a40",
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/app/assets/banner.jpg')",
+    
+      }
+
     },
+  },
+  variants:{
+    extend:{
+       display: ['group-focus']
+    }
   },
   plugins: [],
 }
