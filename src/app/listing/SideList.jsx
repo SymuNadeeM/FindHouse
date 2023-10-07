@@ -184,7 +184,7 @@ function SideList() {
        </div>
      </div>
      <div className="mt-[30px] h-fit border-[1px] border-[#ebebeb] rounded-lg bg-white overflow-hidden pb-[20px] p-[30px]">
-     <h4 className="mb-[20px] text-[18px] font-bold text-text-primary font-nunito">Recently Viewed</h4>
+       <h4 className="mb-[20px] text-[18px] font-bold text-text-primary font-nunito">Recently Viewed</h4>
           <div className="mt-[30px] flex">
               <div className=" w-[118px] h-[80px]">
               <Image src={sidPIn1} className=" rounded-md w-[102px] h-[80px]"/>

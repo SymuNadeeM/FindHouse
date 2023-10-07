@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
-
 import Footerall from './components/footer/Footerall'
 import './globals.css'
 
@@ -16,12 +15,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </head>
       <body className={inter.className}>
-        <Navbar/>
-        {children}
-         <Footerall/>
+            <Navbar/>
+              {children}
+            <Footerall/>
         </body>
     </html>
   )

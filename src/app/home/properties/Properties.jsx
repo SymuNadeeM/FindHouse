@@ -15,8 +15,8 @@ const Properties = () => {
                    </div>
 
                    <div className=" md:grid md:grid-cols-3 gap-[25px]">
-                        <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat  mb-[30px] rounded-[10px] w-full h-[440px] md:h-[355px] bg-slate-400 grid col-span-1">
-                               <Image src={proPin1} className=" w-full h-full  duration-250 max-w-xs transition  ease-in-out hover:scale-110" alt="Louvre"/>
+                        <div className="relative overflow-hidden bg-cover bg-no-repeat  mb-[30px] rounded-[10px]  h-[440px] md:h-[355px] bg-slate-400 grid col-span-1">
+                               <Image src={proPin1} className=" w-full h-full  duration-250  transition  ease-in-out hover:scale-110" alt="Louvre"/>
                               <div className=" flex flex-col items-center justify-center absolute text-[#fff] bottom-[20px] left-[50%] right-[50%]">
                                   <h4 className=" text-[18px] font-nunito font-bold leading-5  mb-[5px]">Miami</h4>
                                   <p className="text-[14px] font-nunito font-bold ">24 Properties</p>
