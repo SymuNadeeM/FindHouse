@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { AiOutlineArrowUp } from 'react-icons/ai';
-// import {FaArrowCircleUp} from 'react-icons/fa'; 
-// import { Button } from './Styles'; 
+
 
 const ScrollButton = () =>{ 
 

@@ -1,8 +1,8 @@
 import Image from "next/image"
-import proPin1 from '../../assets/_assets_images_property_pc1.jpg'
-import proPin2 from '../../assets/property_pc2.jpg'
-import proPin3 from '../../assets/property_pc3.jpg'
-import proPin4 from '../../assets/property_pc4.jpg'
+import proPin1 from '../assets/_assets_images_property_pc1.jpg'
+import proPin2 from '../assets/property_pc2.jpg'
+import proPin3 from '../assets/property_pc3.jpg'
+import proPin4 from '../assets/property_pc4.jpg'
 
 
 const Properties = () => {
@@ -16,28 +16,28 @@ const Properties = () => {
 
                    <div className=" md:grid md:grid-cols-3 gap-[25px]">
                         <div className="relative overflow-hidden bg-cover bg-no-repeat  mb-[30px] rounded-[10px]  h-[440px] md:h-[355px] bg-slate-400 grid col-span-1">
-                               <Image src={proPin1} className=" w-full h-full  duration-250  transition  ease-in-out hover:scale-110" alt="Louvre"/>
-                              <div className=" flex flex-col items-center justify-center absolute text-[#fff] bottom-[20px] left-[50%] right-[50%]">
+                               <Image src={proPin1} className=" w-full h-full  duration-300  transition  ease-in-out hover:scale-110" alt="Louvre"/>
+                              <div className=" flex flex-col items-center justify-center absolute text-[#fff] bottom-[20px] left-[45%] right-[45%]">
                                   <h4 className=" text-[18px] font-nunito font-bold leading-5  mb-[5px]">Miami</h4>
-                                  <p className="text-[14px] font-nunito font-bold ">24 Properties</p>
+                                  <p className="text-[14px] font-nunito font-bold ">24_Properties</p>
                               </div>
                         </div>
-                        <div className=" relative mb-[30px] rounded-[10px]  bg-slate-400 grid col-span-2">
-                        <Image src={proPin2} className=" w-full h-full" />
+                        <div className=" relative overflow-hidden bg-cover bg-no-repeat mb-[30px] rounded-[10px]  bg-slate-400 grid col-span-2">
+                        <Image src={proPin2} className=" w-full h-full duration-300  transition  ease-in-out  hover:scale-110" alt="Louvre" />
                         <div className=" absolute flex flex-col items-center justify-center  text-[#fff] bottom-[20px] left-[130px] right-[130px] md:left-[322px] md:right-[322px]">
                                   <h4 className=" text-[18px] font-nunito font-bold leading-5  mb-[5px]">Los Angeles</h4>
                                   <p className="text-[14px] font-nunito font-bold leading-5">18 Properties</p>
                               </div>
                         </div>
-                        <div className=" relative mb-[30px] md:mb-0 w-full rounded-[10px] h-[215px]  md:h-[355px] bg-slate-400 grid col-span-2">
-                        <Image src={proPin3} className=" w-full h-full" />
+                        <div className=" relative overflow-hidden bg-cover bg-no-repeat mb-[30px] md:mb-0 w-full rounded-[10px] h-[215px]  md:h-[355px] bg-slate-400 grid col-span-2">
+                        <Image src={proPin3} className=" w-full h-full transition duration-300 ease-in-out hover:scale-110" />
                         <div className=" absolute flex flex-col items-center justify-center  text-[#fff] bottom-[20px] left-[130px] right-[130px] md:left-[322px] md:right-[322px]">
                                   <h4 className=" text-[18px] font-nunito font-bold leading-5  mb-[5px]">Los Angeles</h4>
                                   <p className="text-[14px] font-nunito font-bold leading-5">18 Properties</p>
                               </div>
                         </div>
-                        <div className=" relative rounded-[10px]  bg-slate-400 grid col-span-1">
-                        <Image src={proPin4} className=" w-full h-full" />
+                        <div className=" relative overflow-hidden bg-cover bg-no-repeat rounded-[10px]  bg-slate-400 grid col-span-1">
+                        <Image src={proPin4} className=" w-full h-full transition duration-300 ease-in-out hover:scale-110" />
                         <div className=" flex flex-col items-center justify-center absolute text-[#fff] bottom-[20px] left-[130px] right-[130px]">
                                   <h4 className=" text-[18px] font-nunito font-bold leading-5  mb-[5px]">Miami</h4>
                                   <p className="text-[14px] font-nunito font-bold leading-5">24 Properties</p>

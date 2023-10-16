@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import bannar from '../../assets/banner.jpg';
+import bannar from '../assets/banner.jpg';
 
 
 export default function Banner() {

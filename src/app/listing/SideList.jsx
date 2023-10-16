@@ -1,15 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-
-import { BiCaretRight } from "react-icons/bi"
-import { CiLocationOn, CiSearch } from "react-icons/ci"
-import { HiOutlineDotsVertical } from "react-icons/hi"
-import featPic3 from "../assets/features3.jpg"
-import sidPIn1 from "../assets/fp2.jpg"
-import sidPIn2 from "../assets/fp3.jpg"
-import sidPIn3 from "../assets/fp4.jpg"
+"use client"
+import Image from "next/image";
+import Link from "next/link";
+import { BiCaretRight } from "react-icons/bi";
+import { CiLocationOn, CiSearch } from "react-icons/ci";
+import { HiOutlineDotsVertical } from "react-icons/hi";
+import sidPIn1 from "../assets/fp2.jpg";
+import sidPIn2 from "../assets/fp3.jpg";
+import sidPIn3 from "../assets/fp4.jpg";
+// import PicSlider from "./PicSlider";
 
 function SideList() {
+    
   return (
     <>
     <div>
@@ -137,24 +138,9 @@ function SideList() {
       </div>
       <div className="mt-[30px] h-fit border-[1px] border-[#ebebeb] rounded-lg bg-white overflow-hidden pb-[20px] p-[30px]">
         <h4 className="mb-[20px] text-[18px] font-bold text-text-primary font-nunito">Featured Properties</h4>
-          <div className=" relative rounded-lg ">
-              <Image src={featPic3} className=" w-full rounded-lg " />
-                <div className="  absolute top-[24px] md:top-[10px] bottom-0 right-[24px] md:right-[10px] left-[24px] md:left-[10px] ">
-                     <div className=" flex">
-                        <Link href={""} className=" mr-[0.5rem] bg-[#3e4c66] text-white font-nunito text-[14px] leading-5  rounded w-[75px] h-[25px] items-center flex justify-center text-center">
-                            Featured
-                             </Link>
-                             <Link href={""} className="  bg-primary-color text-white font-nunito text-[14px] leading-5  rounded w-[75px] h-[25px] items-center flex justify-center text-center">
-                                                 For Rent
-                                                </Link>
-                                           </div>
-                                     </div>
-                                     
-                                     <div className=" absolute bottom-[15px] text-[22px] font-nunito text-white font-bold left-[20px] leading-5">
-                                             <h4>$15000/<small>mo</small></h4>
-                                              <h4 className=" ">Renovated Apartment</h4>
-                                     </div>
-            </div>  
+          <div>
+          {/* <PicSlider/> */}
+          </div>
      </div>
      <div className="mt-[30px] h-fit border-[1px] border-[#ebebeb] rounded-lg bg-white overflow-hidden pb-[20px] p-[30px]">
      <h4 className="mb-[20px] text-[18px] font-bold text-text-primary font-nunito">Categories Property</h4>

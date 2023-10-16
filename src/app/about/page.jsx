@@ -1,5 +1,5 @@
 "use client"
-import Loginregist from "../components/Loginregist"
+
 import AppleCard from "../home/AppleCard"
 import AbouSection from "./AbouSection"
 import InnerPage from "./InnerPage"
@@ -15,7 +15,7 @@ const page = () => {
        <AppleCard />
        <OurTeam/>
        <Testmonial />
-       <Loginregist />
+     
     </>
   )
 }

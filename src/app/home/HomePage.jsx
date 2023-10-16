@@ -1,10 +1,10 @@
 import AppleCard from './AppleCard'
 import Articals from './Articals'
+import Banner from './Banner'
+import Features from './Features'
 import Partner from './Partner'
+import Properties from './Properties'
 import RegisterAs from './RegisterAs'
-import Banner from './banner/Banner'
-import Features from './featured/Features'
-import Properties from './properties/Properties'
 
 export default function HomePage() {
   return (
@@ -16,6 +16,7 @@ export default function HomePage() {
       <Articals/>
       <Partner/>
       <RegisterAs/>
+      
       
     </>
   )

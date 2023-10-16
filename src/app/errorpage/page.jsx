@@ -19,7 +19,7 @@ function ErrorPage() {
                      </div>
                       <div className='mt-[20px]'>
                       <div className=' flex items-center justify-between px-[12px] mb-[28px] w-full border-[1px] border-[#ddd] rounded-[5px] bg-white   h-[52px] leading-5'>
-                         <input type="password" placeholder='Search' className=' w-[85%]  outline-none text-[14px] font-nunito text-text-primary px-2 ' />
+                         <input type="text" placeholder='Search' className=' w-[85%]  outline-none text-[14px] font-nunito text-text-primary px-2 ' />
                           <IoIosSearch  size={20} className=' text-text-primary' />
                      </div> 
                       </div>

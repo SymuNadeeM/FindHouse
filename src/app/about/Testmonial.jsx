@@ -11,8 +11,7 @@ function Testmonial() {
   const settings = {
     dots: true,
     infinite: true,
-    // arrows: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1
   }
@@ -29,7 +28,7 @@ function Testmonial() {
           
            <div className=" w-[582px] py-[5px] px-[12px] ">
                <div className=" relative flex flex-col items-center justify-center">
-                    <Image src={testPin1} className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
+                    <Image src={testPin1} className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" alt="" />
                
                <div className="  ">
                       <div className=" absolute  left-[54%] md:left-[52%]  top-[62px] ">
@@ -47,10 +46,10 @@ function Testmonial() {
           
            <div className=" w-[582px] py-[5px] px-[12px] ">
                <div className=" relative flex flex-col items-center justify-center">
-                    <Image src={testPin2} className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
+                    <Image src={testPin2} alt="" className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
                
                <div className="  ">
-                      <div className=" absolute  left-[54%]  top-[62px] ">
+                      <div className=" absolute  left-[54%] md:left-[52%]  top-[62px] ">
                         <BiSolidQuoteLeft className="  w-[43px] h-[43px] bg-primary-color text-white shadow-xl  rounded-full p-3 " />
                       </div>
                 </div>
@@ -65,10 +64,10 @@ function Testmonial() {
           
            <div className=" w-[582px] py-[5px] px-[12px] ">
                <div className=" relative flex flex-col items-center justify-center">
-                    <Image src={testPin3} className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
+                    <Image src={testPin3} alt="" className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
                
                <div className="  ">
-                      <div className=" absolute  left-[54%]  top-[62px] ">
+                      <div className=" absolute  left-[54%] md:left-[52%]  top-[62px] ">
                         <BiSolidQuoteLeft className="  w-[43px] h-[43px] bg-primary-color text-white shadow-xl  rounded-full p-3 " />
                       </div>
                 </div>
@@ -82,10 +81,10 @@ function Testmonial() {
            </div>
            <div className=" w-[582px] py-[5px] px-[12px] ">
                <div className=" relative flex flex-col items-center justify-center">
-                    <Image src={testPin4} className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
+                    <Image src={testPin4} alt="" className=" w-[104px] h-[104px] rounded-full shadow-xl border-[5px] border-[#fff]" />
                
                <div className="  ">
-                      <div className=" absolute  left-[54%]  top-[62px] ">
+                      <div className=" absolute  left-[54%] md:left-[52%]  top-[62px] ">
                         <BiSolidQuoteLeft className="  w-[43px] h-[43px] bg-primary-color text-white shadow-xl  rounded-full p-3 " />
                       </div>
                 </div>

@@ -46,26 +46,26 @@ export default function Navbar() {
                          
                        <ul className="z-10  absolute  invisible group-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px] ">
                      
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color   border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 1 </li>
-                           <li className="  hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 2 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 3 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 4 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 5</li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 6 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 7 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 8 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 9 </li>
-                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Home 10 </li>
-                           <li  className="   text-sm py-[12px] pr-[20px] " >Home 11 </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color   border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 1</Link> </li>
+                           <li className="  hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} >Home 2</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 3</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 4</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 5</Link> </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 6</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 7</Link> </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 8</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 9</Link>  </li>
+                           <li className=" hover:translate-x-3 duration-150 hover:text-primary-color  text-sm py-[15px] pr-[20px] " ><Link href={"/"} >Home 10</Link> </li>
+                           
                            
                        </ul>
                     </li>
                     <li className=" mx-[2px] relative  group bg-white   "><Link href={"/listing"} className="  text-[#484848] pt-[30px] pr-[16px] pb-[30px] pl-[10px]  font-normal text-[16px] flex items-center gap-2 " > Listing <MdKeyboardArrowDown  /></Link> 
                          
                        <ul className="z-10  absolute  invisible group-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px] ">
-                       <li className="relative  group2  border-b-[1px]  hover:translate-x-3 duration-150  border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} className="flex  justify-between items-center" > 
+                       <li className="relative  group2  border-b-[1px]  hover:translate-x-3 duration-150  border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/listing"} className="flex  justify-between items-center" > 
                        Listing Grid <MdKeyboardArrowRight size={20} />  </Link>
-                             <ul className=" ml-[220px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
+                             <ul className=" ml-[200px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
                                 <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Grid v1</li>
                                 <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Grid v2</li>
                                 <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Grid v2</li>
@@ -77,14 +77,14 @@ export default function Navbar() {
                                 <li className=" hover:translate-x-3 duration-150 hover:text-primary-color text-sm py-[12px] pr-[20px] " >Grid vlast</li>
                              </ul>
                            </li>
-                           <li className="relative  group2 hover:translate-x-3 duration-150 border-b-[1px]  border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} className="flex  justify-between items-center" > 
+                           <li className="relative  group2 hover:translate-x-3 duration-150 border-b-[1px]  border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/listing"} className="flex  justify-between items-center" > 
                        Listing List <MdKeyboardArrowRight size={20} />  </Link>
                              <ul className=" ml-[220px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
                                 <li className=" text-sm py-[12px] pr-[20px] hover:translate-x-3 duration-150 hover:text-primary-color" >List v1</li>
                                 
                              </ul>
                            </li>
-                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} className="flex  justify-between items-center" > 
+                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/listing"} className="flex  justify-between items-center" > 
                        Listing Style <MdKeyboardArrowRight size={20} />  </Link>
                              <ul className=" ml-[220px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
                              <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Parallaz Style</li>
@@ -93,7 +93,7 @@ export default function Navbar() {
                                 
                              </ul>
                            </li>
-                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} className="flex  justify-between items-center" > 
+                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/listing"} className="flex  justify-between items-center" > 
                        Listing Half <MdKeyboardArrowRight size={20} />  </Link>
                              <ul className=" ml-[220px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
                              <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Map v1</li>
@@ -103,7 +103,7 @@ export default function Navbar() {
                                 
                              </ul>
                            </li>
-                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/"} className="flex  justify-between items-center" > 
+                           <li className="relative  group2  border-b-[1px] hover:translate-x-3 duration-150   border-[#dedede] text-sm py-[15px] pr-[20px] "><Link href={"/listing"} className="flex  justify-between items-center" > 
                       Agent View<MdKeyboardArrowRight size={20} />  </Link>
                              <ul className=" ml-[220px] absolute  invisible group2-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px]">
                              <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] " >Agent v1</li>
@@ -113,8 +113,8 @@ export default function Navbar() {
                                 
                              </ul>
                            </li>
-                           <li className=" border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] hover:translate-x-3 duration-150 " >Agencies View</li>
-                           <li  className="   text-sm py-[12px] pr-[20px] hover:translate-x-3 duration-150 " >Create Listing </li>
+                           <li className=" border-b-[1px] border-[#dedede] text-sm py-[12px] pr-[20px] hover:translate-x-3 duration-150 " ><Link href={'/'}>Agencies View</Link></li>
+                           <li  className="   text-sm py-[12px] pr-[20px] hover:translate-x-3 duration-150 " ><Link href={'/'}>Create Listing </Link> </li>
                        </ul>
                     </li>
                     <li className=" mx-[2px] "><Link href={"/"} className=" pt-[30px] pr-[16px] pb-[30px] pl-[10px] font-light text-[#777] flex items-center gap-2   " > Property </Link> </li>
@@ -137,9 +137,9 @@ export default function Navbar() {
                          
                          <ul className="z-10  absolute  invisible group-hover:visible bg-white rounded-md py-[15px] shadow-xl duration-150  px-[30px] w-[260px] ">
                        
-                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Blog List 1 </li>
-                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Blog List 2 </li>
-                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " >Blog List 3 </li>
+                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/blog"}>Blog List 1</Link> </li>
+                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/blog"}>Blog List 2</Link>  </li>
+                             <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/blog"}>Blog List 3</Link> </li>
       
                              <li  className=" hover:translate-x-3 duration-150 hover:text-primary-color  text-sm py-[12px] pr-[20px] " >Blog Details </li>
                              
@@ -239,7 +239,7 @@ export default function Navbar() {
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div onClick={()=> setIsOpen(!isOpen)} className=" flex items-center justify-between px-[20px] ">
                   <button  className=" flex  relative text-[16px]  py-[12px]">
-                  Home
+                  <Link href={'/'}>Home</Link>
                  </button>
                   <h4 className=" text-[16px]">
                    {
@@ -251,11 +251,11 @@ export default function Navbar() {
               
                {isOpen && <div className="  bg-slate-200 px-[20px] "> 
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Home 1</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Home 2</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Home 3</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Home 4</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Home 5</li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 1</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 2</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 3</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 4</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 5</Link></li>
                       
                      </ul>
                 </div>}
@@ -264,7 +264,7 @@ export default function Navbar() {
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div onClick={()=> setIsOpen2(!isOpen2)} className=" flex items-center justify-between px-[20px] ">
                   <button  className=" flex  active:text-red  relative text-[16px]  py-[12px]">
-                  Listing
+                  <Link href={'/listing'}>Listing</Link>
                  </button>
                   <h4 className=" text-[16px]">
                    {
@@ -311,7 +311,7 @@ export default function Navbar() {
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div onClick={()=> setIsBlog(!isBlog)} className=" flex items-center justify-between px-[20px] ">
                   <button  className=" flex  active:text-red  relative text-[16px]  py-[12px]">
-                     Blog 
+                     <Link href={'/blog'} >Blog</Link> 
                  </button>
                   <h4 className=" text-[16px]">
                    {
@@ -345,15 +345,15 @@ export default function Navbar() {
               
                 {isPage && <div className=" text-[16px]  bg-slate-200 px-[20px] ">
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">About us</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Gallery</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Faq</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">LogIn</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Compare</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Membership</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Register</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Service</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> </li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/about'} >About us</Link> </li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/gellery'} >Gallery</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/faqpart'} >Faq</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/login'} >Login</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/compare'} >Compare</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/membership'} >Membership</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/register'} >Register</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/ourservice'} >Service</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/errorpage'} >404 Page</Link> </li>
                      </ul>
                 </div>}
       
@@ -366,12 +366,12 @@ export default function Navbar() {
               </li>
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div  className=" flex items-center justify-between px-[20px] py-[12px] ">
-                   <Link href={'/contact'} className=" flex items-center "> <LiaUserSolid size={20}/> Login </Link>
+                   <Link href={'/login'} className=" flex items-center "> <LiaUserSolid size={20}/> Login </Link>
                 </div>
               </li>
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div  className=" flex items-center justify-between px-[20px] py-[12px] ">
-                   <Link href={'/contact'} className=" flex items-center "> <BsPencil size={18}/> Register </Link>
+                   <Link href={'/register'} className=" flex items-center "> <BsPencil size={18}/> Register </Link>
                 </div>
               </li>
                 </ul>

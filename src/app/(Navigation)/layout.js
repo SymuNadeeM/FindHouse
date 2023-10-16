@@ -1,11 +1,11 @@
-import ScrollButton from "../components/ScrollButton";
+// import ScrollButton from "../components/ScrollButton";
 
 
-export default function Layout({ children }) {
-    return (
-      <>
-        <main>{children}</main>
-        <ScrollButton />
-      </>
-    )
-  }
+// export default function Layout({ children }) {
+//     return (
+//       <>
+//         <main>{children}</main>
+//         <ScrollButton />
+//       </>
+//     )
+//   }

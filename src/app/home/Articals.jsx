@@ -46,7 +46,7 @@ function Articals() {
                            <div className=" w-full">
                                 <div className=" bg-white border-[1px] border-[#ebebeb] rounded-lg">
                                 <div className=" relative rounded-lg mt-[10px] mr-[9px] ml-[10px]">
-                                     <Image src={featPic2} className=" w-full rounded-lg h-[220px] " />
+                                     <Image src={featPic2} className=" w-full rounded-lg h-[220px]  " />
                                 </div>
                                 <div>
                                     <div className="p-[20px]">
