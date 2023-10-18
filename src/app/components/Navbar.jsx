@@ -2,16 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineGoogle, AiOutlineUser } from 'react-icons/ai';
-import { BiLogoFacebook, BiPlus } from 'react-icons/bi';
+import { BiPlus } from 'react-icons/bi';
 import { BsPencil } from 'react-icons/bs';
-import { CiLock } from 'react-icons/ci';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { LiaUserSolid } from 'react-icons/lia';
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from 'react-icons/md';
 import { RxCross1 } from 'react-icons/rx';
 import logopic from "../assets/colorheader-logo2.png";
-import logrespic from '../assets/logInregister.jpg';
+import ModelLogReg from "./ModelLogReg";
 
 
 export default function Navbar() {
@@ -34,10 +32,17 @@ export default function Navbar() {
 
   return (
     <>
-     <header className=" px-[20px] md:px-[30px] fixed z-50 top-0 right-0 left-0 bg-white  ">
+    {oneModel? (
+        <div className=" z-50  bg-black/75 fixed top-0 right-[50%] bottom-0 left-0 h-screen w-screen overflow-y-auto">     
+          <div>
+            <ModelLogReg handleModal={handleModal}/>
+          </div>
+        </div>
+    ) : ""}
+     <header className=" z-30 px-[20px] md:px-[30px] fixed  top-0 right-0 left-0 bg-white  ">
          <div className="hidden md:flex items-center justify-between text-[#777] text-[16px] leading-6 ">
             <Link href={"/"} className="  flex mr-[37px] relative">
-            <Image src={logopic} width={40} height={45} className=" text-primary-color"/>
+            <Image src={logopic} alt="" width={40} height={45} className=" text-primary-color"/>
             <p className=" text-[22px] text-[#484848] font-bold mt-[9px] pl-[15px]  font-nunito leading-7">FindHouse</p>
             </Link>
             <nav>
@@ -142,77 +147,11 @@ export default function Navbar() {
                              <li className=" hover:translate-x-3 duration-150 hover:text-primary-color border-b-[1px] border-[#dedede] text-sm py-[15px] pr-[20px] " ><Link href={"/blog"}>Blog List 3</Link> </li>
       
                              <li  className=" hover:translate-x-3 duration-150 hover:text-primary-color  text-sm py-[12px] pr-[20px] " >Blog Details </li>
-                             
                          </ul>
                     </li>
                     <li className=" mx-[2px] "><Link href={"/contact"} className=" active:text-primary-color pt-[30px] pr-[16px] pb-[30px] pl-[10px] font-light text-[#777] flex items-center gap-2   " > Contact</Link> </li>
                     <li className=" mx-[2px] " onClick={ handleModal } ><Link href={"/"} className=" pt-[30px] pr-[16px] pb-[30px] pl-[10px] font-light text-[#777] flex items-center" > <LiaUserSolid  className=" text-[25px]"  />Login/Register</Link> 
-                    {oneModel? (<div className=" z-50  bg-black/75 fixed top-0 right-[50%] bottom-0 left-0 h-screen w-screen overflow-y-auto"> 
-                  
-                  <div >
-                     <div className="bg-[#ffff]   absolute w-auto rounded-[8px] top-[80px] left-[277px] right-[277px] ">
-                         {/* ---close side----- */}
-                        <div className=' absolute top-[-20px] right-[-20px]  ' >
-                            <div className=' flex items-center justify-center bg-primary-color h-[50px] w-[50px] rounded-full text-white'>
-                              <AiOutlineClose className='' size={20} />
-                            </div>
-                        </div>
-                         <div className=' w-[800px] h-auto  p-[20px]'>
-                             <div className=' flex items-center border-b-[2px] border-[#ebebebeb]'>
-                                <div className=' flex items-center justify-center w-1/2 h-[70px]'>
-                                  <h4 className=' text-[18px] font-bold leading-[65px] text-text-primary'>Login</h4>
-                                </div>
-                                <div className='flex items-center justify-center bg-[#f5f5f5] w-1/2 h-[70px]'>
-                                  <h4 className=' text-[18px] font-bold leading-[65px] text-text-primary'>Register</h4>
-                                </div>
-                             </div>
-                             <div className=' px-[15px] my-[20px] flex gap-[20px]'>
-                                  <div className=' w-1/2'>
-                                      <Image src={logrespic} />
-                                  </div>
-                                  <div className=' w-1/2'>
-                                     <form action="">
-                                     <h4 className='mb-[25px] text-[#006c70] text-[18px] font-bold font-nunito'>Login</h4>
-                                     <button className=' w-full h-[52px] hover:bg-[#3b5998] hover:text-white border-[1px] border-[#3b5998]   duration-300 rounded-[4px] text-[#3b5998] text-[16px] flex items-center gap-[25%]  px-[8px] '> <BiLogoFacebook size={20} /> <span > Login with Facebook</span> </button> 
-                                     <button className=' w-full h-[52px] hover:bg-[#ea4335] hover:text-white border-[1px] border-[#ea4335] mt-[20px] mb-[25px] duration-300  rounded-[4px] text-[#ea4335] text-[16px] flex items-center gap-[25%]   px-[8px] '> <AiOutlineGoogle size={20} /> <span > Login with Google</span> </button>
-                                      <hr className=' mb-[25px] text-[#ebebebeb] ' />
-                                      <div className=' flex items-center justify-between px-[12px] mb-[28px] w-full border-[1px] border-[#ddd] rounded-[5px] bg-white   h-[52px] leading-5'>
-                             
-                             <input type="email" placeholder=' User Name or Email' className=' w-[85%]  outline-none text-[14px] font-nunito text-text-primary px-2 ' />
-                              
-                                 <AiOutlineUser  size={20} className=' text-text-primary' />
-                              
-                         </div> 
-                         <div className=' flex items-center justify-between px-[12px] mb-[28px] w-full border-[1px] border-[#ddd] rounded-[5px] bg-white   h-[52px] leading-5'>
-                           
-                             <input type="password" placeholder='Password' className=' w-[85%]  outline-none text-[14px] font-nunito text-text-primary px-2 ' />
-                              
-                                 <CiLock  size={20} className=' text-text-primary' />
-                              
-                         </div> 
-                         <div className=' mb-[1rem] items-center flex  justify-between'>
-                           <div  className='  items-center flex  '>
-                           <input type="checkbox" className='  w-[17px] h-[17px]   bg-primary-color border-primary-color text-white' />
-                            <label htmlFor="" className=' inline-block cursor-pointer text-text-primary font-nunito text-[14px] pl-[15px]'>Remember me</label>
-                           </div>
-                            <Link href={""} className='font-nunito text-[14px] text-[#8b91dd] leading-9' >Forgot password?</Link>
-                         </div>
-                          <div className=''>
-                              <button type='submite' className=' rounded-[8px] shadow-lg text-white font-nunito text-[16px] font-bold h-[50px] leading-5 bg-primary-color cursor-pointer w-full hover:border-[2px] border-primary-color hover:text-primary-color duration-300 hover:bg-white'> Login</button>
-                          </div> 
-                           <div className=' flex items-center justify-center mt-[15px]'>
-                              <p>Dont have an account?</p>
-                              <Link href={""} className=' text-[14px] text-primary-color'> Register</Link>
-                           </div>
-                          </form>
-                                  
-                                  </div>
-                             </div>
-                         </div>
-                     </div>
-                  </div>
-                
-                </div>) :"" }
+                    
                     </li>
                     <li className=" mx-[2px] "><Link href={"/"} className="  font-light text-white flex items-center gap-2 h-[50px] w-[180px] p-[13px] justify-center hover:text-primary-color hover:bg-white hover:border-[2px] border-primary-color rounded-full text-center  bg-primary-color leading-4 " > <BiPlus size={24} /> Create Listing</Link> </li>
                 </ul>
@@ -220,7 +159,7 @@ export default function Navbar() {
          </div>
 
          {/* small sceen */}
-         <div className="md:hidden py-[20px] flex items-center justify-between text-[#777] text-[16px] leading-6 ">
+         <div className="md:hidden py-[20px] z-[1] flex items-center justify-between text-[#777] text-[16px] leading-6 ">
          <div onClick={handlemenu}>
         <HiOutlineMenuAlt1  size={34} />
         </div>
@@ -228,7 +167,7 @@ export default function Navbar() {
         <div className=" ">
             <div className=" flex items-center justify-between p-[20px] bg-white ">
             <Link href={"/"} className="flex mr-[30px] relative">
-            <Image src={logopic} width={40} height={45} className=" text-primary-color"/>
+            <Image src={logopic} alt="" width={40} height={45} className=" text-primary-color"/>
             <p className=" text-[20px]  text-[#484848] font-bold  mt-[12px] pl-[10px]  font-nunito leading-7">FindHouse</p>
             </Link>
             <RxCross1 onClick={handlemenu}  size={20} className=" mt-[4px] text-black" />
@@ -251,11 +190,11 @@ export default function Navbar() {
               
                {isOpen && <div className="  bg-slate-200 px-[20px] "> 
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 1</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 2</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 3</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 4</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'}>Home 5</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'} onClick={handlemenu} >Home 1</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'} onClick={handlemenu} >Home 2</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'} onClick={handlemenu} >Home 3</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'} onClick={handlemenu} >Home 4</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/'} onClick={handlemenu} >Home 5</Link></li>
                       
                      </ul>
                 </div>}
@@ -264,7 +203,7 @@ export default function Navbar() {
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div onClick={()=> setIsOpen2(!isOpen2)} className=" flex items-center justify-between px-[20px] ">
                   <button  className=" flex  active:text-red  relative text-[16px]  py-[12px]">
-                  <Link href={'/listing'}>Listing</Link>
+                  <Link href={''}>Listing</Link>
                  </button>
                   <h4 className=" text-[16px]">
                    {
@@ -276,12 +215,12 @@ export default function Navbar() {
               
                {isOpen2 && <div className=" text-[16px]  bg-slate-200 px-[20px] "> 
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Listing Grid</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Listing List</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> Listing Style</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Listing Half</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Agent View</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Create Listing</li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/listing'} onClick={handlemenu} >Listing Grid</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/listing'} onClick={handlemenu} >Listing List</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/listing'} onClick={handlemenu} >Listing Style</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/listing'} onClick={handlemenu} >Listing Half</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/listing'} onClick={handlemenu} >Listing View</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/listing'} onClick={handlemenu} >Create Listing</Link></li>
                       
                      </ul>
                 </div>}
@@ -311,7 +250,7 @@ export default function Navbar() {
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div onClick={()=> setIsBlog(!isBlog)} className=" flex items-center justify-between px-[20px] ">
                   <button  className=" flex  active:text-red  relative text-[16px]  py-[12px]">
-                     <Link href={'/blog'} >Blog</Link> 
+                     <Link href={''} >Blog</Link> 
                  </button>
                   <h4 className=" text-[16px]">
                    {
@@ -323,9 +262,9 @@ export default function Navbar() {
               
                {isBlog && <div className=" text-[16px]  bg-slate-200 px-[20px] "> 
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]">Blog List 1</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> Blog List 2</li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> Blog List 3</li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/blog'} onClick={handlemenu} >Blog List 1</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/blog'} onClick={handlemenu} >Blog List 2</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/blog'} onClick={handlemenu} >Blog List 3</Link></li>
                      </ul>
                 </div>}
       
@@ -345,15 +284,15 @@ export default function Navbar() {
               
                 {isPage && <div className=" text-[16px]  bg-slate-200 px-[20px] ">
                      <ul>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/about'} >About us</Link> </li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/gellery'} >Gallery</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link href={'/faqpart'} >Faq</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/login'} >Login</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/compare'} >Compare</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/membership'} >Membership</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/register'} >Register</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/ourservice'} >Service</Link></li>
-                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link href={'/errorpage'} >404 Page</Link> </li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/about'} >About us</Link> </li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link  onClick={handlemenu} href={'/gellery'} >Gallery</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"><Link  onClick={handlemenu} href={'/faqpart'} >Faq</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/login'} >Login</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/compare'} >Compare</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/membership'} >Membership</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/register'} >Register</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/ourservice'} >Service</Link></li>
+                      <li className=" py-[12px] pr-[30px] pl-[15px]"> <Link onClick={handlemenu} href={'/errorpage'} >404 Page</Link> </li>
                      </ul>
                 </div>}
       
@@ -361,17 +300,17 @@ export default function Navbar() {
               
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div  className=" flex items-center justify-between px-[20px] py-[12px] ">
-                   <Link href={'/contact'}>Contact </Link>
+                   <Link href={'/contact'} onClick={handlemenu}>Contact </Link>
                 </div>
               </li>
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div  className=" flex items-center justify-between px-[20px] py-[12px] ">
-                   <Link href={'/login'} className=" flex items-center "> <LiaUserSolid size={20}/> Login </Link>
+                   <Link href={'/login'} onClick={handlemenu} className=" flex items-center "> <LiaUserSolid size={20}/> Login </Link>
                 </div>
               </li>
               <li className=" relative h-auto  border-b-[1px] border-[hsla(0,0%,68%,.2)]">
                 <div  className=" flex items-center justify-between px-[20px] py-[12px] ">
-                   <Link href={'/register'} className=" flex items-center "> <BsPencil size={18}/> Register </Link>
+                   <Link href={'/register'} onClick={handlemenu} className=" flex items-center "> <BsPencil size={18}/> Register </Link>
                 </div>
               </li>
                 </ul>
@@ -385,7 +324,7 @@ export default function Navbar() {
         </div>
               <div>
               <Link href={"/"} className="flex mr-[30px] relative">
-            <Image src={logopic} width={40} height={45} className=" text-primary-color"/>
+            <Image src={logopic} width={40} height={45} alt="" className=" text-primary-color"/>
             <p className=" text-[18px] text-[#484848] font-bold ml-[-10px] mt-[12px] pl-[15px]  font-nunito leading-7">FindHouse</p>
             </Link>
               </div>

@@ -1,3 +1,5 @@
+'use client'
+import ScrollButton from '../components/ScrollButton'
 import AppleCard from './AppleCard'
 import Articals from './Articals'
 import Banner from './Banner'
@@ -16,8 +18,7 @@ export default function HomePage() {
       <Articals/>
       <Partner/>
       <RegisterAs/>
-      
-      
+      <ScrollButton />
     </>
   )
 }

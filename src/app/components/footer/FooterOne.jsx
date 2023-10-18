@@ -15,21 +15,21 @@ export default function FooterOne() {
                  <div className=" md:pl-[70px]">
                  <h4 className=" text-white font-bold mb-[25px]  text-[18px] font-nunito leading-5">Quick Links</h4>
                      <ul className=" outline-none list-none">
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> About us </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> Terms & Conditions </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> Users Guide </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> Support Center </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> Press Info </Link></li>
+                        <li> <Link href={"/about"} className=" text-[14px] hover:translate-x-3 duration-300 hover:text-white font-nunito text-[#8a99b3] leading-10"> About us </Link></li>
+                        <li> <Link href={"/about"} className=" text-[14px] hover:translate-x-3 duration-300 hover:text-white font-nunito text-[#8a99b3] leading-10"> Terms & Conditions </Link></li>
+                        <li> <Link href={"/about"} className=" text-[14px] hover:translate-x-3 duration-300 hover:text-white font-nunito text-[#8a99b3] leading-10"> Users Guide </Link></li>
+                        <li> <Link href={"/about"} className=" text-[14px] hover:translate-x-3 duration-300 hover:text-white font-nunito text-[#8a99b3] leading-10"> Support Center </Link></li>
+                        <li> <Link href={"/about"} className=" text-[14px] hover:translate-x-3 duration-300 hover:text-white font-nunito text-[#8a99b3] leading-10"> Press Info </Link></li>
                      </ul>
                  </div>
                  <div className="">
                  <h4 className=" text-white font-bold mb-[25px]  text-[18px] font-nunito leading-5">Contact Us</h4>
                      <ul className=" outline-none list-none">
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> info@findhouse.com </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> Collins Street West, Victoria</Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> 8007, Australia.</Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> +1 246-345-0699 </Link></li>
-                        <li> <Link href={"/about"} className=" text-[14px] font-nunito text-[#8a99b3] leading-10"> +1 246-345-0695 </Link></li>
+                        <li> <Link href={"/about"} className=" hover:translate-x-3 duration-300 hover:text-white text-[14px] font-nunito text-[#8a99b3] leading-10"> info@findhouse.com </Link></li>
+                        <li> <Link href={"/about"} className=" hover:translate-x-3 duration-300 hover:text-white text-[14px] font-nunito text-[#8a99b3] leading-10"> Collins Street West, Victoria</Link></li>
+                        <li> <Link href={"/about"} className=" hover:translate-x-3 duration-300 hover:text-white text-[14px] font-nunito text-[#8a99b3] leading-10"> 8007, Australia.</Link></li>
+                        <li> <Link href={"/about"} className=" hover:translate-x-3 duration-300 hover:text-white text-[14px] font-nunito text-[#8a99b3] leading-10"> +1 246-345-0699 </Link></li>
+                        <li> <Link href={"/about"} className=" hover:translate-x-3 duration-300 hover:text-white text-[14px] font-nunito text-[#8a99b3] leading-10"> +1 246-345-0695 </Link></li>
                      </ul>
                  </div>
                  <div className="">

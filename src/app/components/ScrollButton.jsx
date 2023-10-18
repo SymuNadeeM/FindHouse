@@ -22,19 +22,20 @@ const scrollToTop = () =>{
 	window.scrollTo({ 
 	top: 0, 
 	behavior: 'smooth'
-	/* you can also use 'auto' behaviour 
-		in place of 'smooth' */
+	
 	}); 
 }; 
 
 window.addEventListener('scroll', toggleVisible); 
 
 return ( 
-    
-	<button className=' z-50 w-[50px] h-[50px] bg-primary-color bottom-0 right-2'> 
-	<AiOutlineArrowUp onClick={scrollToTop} 
-	style={{display: visible ? 'inline' : 'none'}} /> 
-	</button> 
+    <div className='fixed  bottom-[15px] right-[20px]'>
+		<button className='  w-[45px] h-[45px] rounded-full text-white bg-[#141e2f] bottom-0 right-2' onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}} > 
+		<div className=' flex items-center justify-center'>
+		<AiOutlineArrowUp size={22}  /> 
+		</div>
+		</button> 
+	</div>	
 ); 
 } 
 

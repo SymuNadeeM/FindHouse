@@ -9,9 +9,9 @@ export default function Banner() {
 
   return (
     <>
+      <div >
       <div className='relative'>
-      <div>
-         <Image src={bannar} className='w-full h-[850px] bg-cover   ' />
+         <Image alt='' src={bannar} className='w-full h-[850px] bg-cover   ' />
       </div>
         <div className='absolute top-[130px] md:top-[290px] left-[18px] right-[18px]  md:left-[96px] md:right-[96px]  '>
             <div className=' text-center  items-center   '>

@@ -53,7 +53,7 @@ export default function OurTeam() {
              ]
           }
   return (
-    <section className=' py-[60px] bg-[#fff] md:px-[90px]'>
+    <section className=' overflow-hidden py-[60px] bg-[#fff] md:px-[90px]'>
       <div className=' px-[15px] '>
            <div className=' mb-[40px] flex flex-col items-center justify-center'>
                <h2 className=' text-text-primary font-nunito  leading-5 mb-[10px] text-[30px] font-bold'>Our Team</h2>
