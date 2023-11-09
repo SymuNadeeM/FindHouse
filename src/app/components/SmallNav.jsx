@@ -14,7 +14,7 @@ export default function SmallNav() {
               <div className=" bg-white">
             <div className=" flex items-center justify-between p-[20px] ">
             <Link href={"/"} className="flex mr-[30px] relative">
-            <Image src={logopic} width={40} height={45} className=" text-primary-color"/>
+            <Image src={logopic} alt="" width={40} height={45} className=" text-primary-color"/>
             <p className=" text-[20px]  text-[#484848] font-bold  mt-[12px] pl-[10px]  font-nunito leading-7">FindHouse</p>
             </Link>
             <RxCross1 onClick={handlemenu}  size={20} className=" mt-[4px] text-black" />
